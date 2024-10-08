@@ -1,5 +1,6 @@
 {
   "expo": {
+    
     "name": "taxi-drivers-booking",
     "slug": "taxi-drivers-booking",
     "version": "1.0.0",
@@ -23,14 +24,23 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      [
+        "expo-router",
+      {
+        "origin":"https://uber.com/"
+      }
+    ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "apiKey": "pk_test_bGl0ZXJhdGUtaGF3ay02MS5jbGVyay5hY2NvdW50cy5kZXYk"
+      
     }
   }
 }
